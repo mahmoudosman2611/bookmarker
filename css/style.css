@@ -1,0 +1,119 @@
+/* ?>>>>>>>>>>>>>>>Start Global styles<<<<<<<<<<<<< */
+
+h1 {
+  font-family: "Pacifico", "cursive";
+}
+h2 {
+  font-family: "Righteous", "cursive";
+}
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: rgba(103, 103, 197, 0.685);
+}
+
+:root {
+  --defult-transition: 500ms;
+}
+
+/* ^####uitilets class */
+.w-fit {
+  width: fit-content;
+}
+
+/* ?>>>>>>>>>>>>>>>End Global styles<<<<<<<<<<<<< */
+
+.bookmarker h1 {
+  margin-bottom: 60px;
+}
+
+.bookmarker .form h2 {
+  background-image: linear-gradient(to right, rgb(2, 2, 156), red);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bookmarker h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  background-color: blue;
+  bottom: 3px;
+  z-index: -1;
+  transition: height var(--defult-transition);
+}
+.bookmarker h1:hover::before {
+  height: 70%;
+}
+
+.bookmarker .form {
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+  letter-spacing: 0.5px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: blue;
+  box-shadow: 0 0 0 0.25rem #4768fa67;
+  outline: none;
+}
+
+.form .btn1 {
+  background-color: blue;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Righteous", "cursive";
+  padding-inline: 50px;
+  transition: var(--defult-transition);
+}
+
+.form .btn1:hover {
+  background-color: rgb(0, 0, 107);
+}
+
+.bookmarker .table .btn-visit {
+  background-color: blue;
+  color: white;
+  letter-spacing: 1px;
+}
+.bookmarker .table .btn-visit:hover {
+  background-color: rgb(0, 0, 107);
+}
+.bookmarker .table .btn-visit:active {
+  background-color: white;
+  color: black;
+}
+
+.bookmarker .table .btn-delete {
+  background-color: #d41a30;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.bookmarker .table .btn-delete:hover {
+  background-color: #d30820;
+}
+
+.bookmarker .table .btn-update {
+  background-color: rgb(20, 153, 20);
+  color: white;
+  letter-spacing: 1px;
+}
+
+.bookmarker .table .btn-update:hover {
+  background-color: green;
+}
+
+.table th {
+  font-family: "Righteous", "cursive";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.table td {
+  font-family: "Righteous", "cursive";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
