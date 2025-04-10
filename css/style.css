@@ -75,7 +75,6 @@ body {
 .bookmarker .table .btn-visit {
   background-color: blue;
   color: white;
-  letter-spacing: 1px;
 }
 .bookmarker .table .btn-visit:hover {
   background-color: rgb(0, 0, 107);
@@ -88,7 +87,6 @@ body {
 .bookmarker .table .btn-delete {
   background-color: #d41a30;
   color: white;
-  letter-spacing: 1px;
 }
 
 .bookmarker .table .btn-delete:hover {
@@ -98,7 +96,6 @@ body {
 .bookmarker .table .btn-update {
   background-color: rgb(20, 153, 20);
   color: white;
-  letter-spacing: 1px;
 }
 
 .bookmarker .table .btn-update:hover {
@@ -107,13 +104,27 @@ body {
 
 .table th {
   font-family: "Righteous", "cursive";
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+
+  font-weight: 500;
 }
 
 .table td {
   font-family: "Righteous", "cursive";
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.8em;
+  }
+  .bookmarker .table .btn-delete {
+    font-size: 10px;
+  }
+
+  .bookmarker .table .btn-visit {
+    font-size: 10px;
+  }
+  .bookmarker .table .btn-update {
+    font-size: 10px;
+  }
 }
