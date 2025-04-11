@@ -21,7 +21,6 @@ function addBook() {
 
     bookList.push(book);
     localStorage.setItem("books", JSON.stringify(bookList));
-    displayAllBook();
     clearInput();
   } else {
     alert("Wronge");
@@ -129,3 +128,7 @@ function updateurl() {
     updateBtn.classList.add("d-none");
   }
 }
+
+
+
+
