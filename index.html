@@ -7,6 +7,7 @@
     <link rel="icon" href="imgs/bookmark.png" />
     <!-- *========|> Google Fonts -->
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -61,29 +62,22 @@
               <input
                 type="text"
                 autocomplete="off"
-                class="form-control"
-                id="urlInput"
+                class="form-control urlInput"
                 placeholder="Website URL"
                 oninput="validate(siteUrlRegex, urlInput)"
               />
             </div>
             <div class="d-flex justify-content-center mb-3">
-              <button
-                class="btn btn1 text-center"
-                type="button"
-                onclick="addBook()"
-                id="addBtn"
-              >
+              <button class="btn btn1 text-center" type="button" id="addBtn">
                 Submit
               </button>
               <button
-              class="btn btn1 text-center d-none"
-              type="button"
-              onclick="updateurl() "
-              id="updateBtn"
-            >
-              Update URl
-            </button>
+                class="btn btn2 text-center d-none"
+                type="button"
+                id="updateBtn"
+              >
+                Update URl
+              </button>
             </div>
           </div>
 
@@ -91,41 +85,43 @@
             type="search"
             class="form-control my-4 w-75 mx-auto search"
             placeholder="Search Bookmark...."
-            oninput="searchProducts()"
             id="searchInput"
             autocomplete="off"
           />
-          <table class="table w-100 text-center overflow-hidden rounded-3 mt-5">
-            <thead>
-              <tr>
-                <th>Index</th>
-                <th>Website Name</th>
-                <th>Visit</th>
-                <th>Delete</th>
-                <th>Update</th>
-              </tr>
-            </thead>
-            <tbody id="bookContainer">
-              <!-- <tr>
-                <td class="index"></td>
-                <td class="name"></td>
-                <td>
-                  <button
-                    class="btn btn-visit d-flex justify-content-center align-items-center m-auto gap-1"
-                  >
-                    <i class="fa-regular fa-eye"></i>Visit
-                  </button>
-                </td>
-                <td>
-                  <button
-                    class="btn btn-delete d-flex justify-content-center align-items-center m-auto gap-1"
-                  >
-                  <i class="fa-regular fa-trash-can"></i>Delete
-                  </button>
-                </td>
-              </tr> -->
-            </tbody>
-          </table>
+          <div class=" d-flex justify-content-center">
+            <table class="table w-100 text-center overflow-hidden rounded-3 mt-5">
+              <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Name</th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+                  <th>Update</th>
+                </tr>
+              </thead>
+              <tbody class="bookContainer">
+                <!-- <tr>
+                  <td class="index"></td>
+                  <td class="name"></td>
+                  <td>
+                    <button
+                      class="btn btn-visit d-flex justify-content-center align-items-center m-auto gap-1"
+                    >
+                      <i class="fa-regular fa-eye"></i>Visit
+                    </button>
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-delete d-flex justify-content-center align-items-center m-auto gap-1"
+                    >
+                    <i class="fa-regular fa-trash-can"></i>Delete
+                    </button>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+
         </div>
       </section>
     </main>
@@ -133,5 +129,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- ?========|> Main Js File -->
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
